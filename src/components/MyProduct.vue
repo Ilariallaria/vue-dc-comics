@@ -36,7 +36,7 @@ export default {
 <style scoped lang="scss">
 
   section{
-  height: 120px;
+  height: 110px;
   background-color: #0084f9;
 
     .container{
