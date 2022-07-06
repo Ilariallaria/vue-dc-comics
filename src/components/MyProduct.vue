@@ -53,8 +53,14 @@ export default {
         align-items: center;
 
         img{
-        width: 35px;
+        width: auto;
+        height: 35px;
         display: inline;
+
+        }
+
+        &:last-child img{
+            height: 25px;
         }
 
         span{
