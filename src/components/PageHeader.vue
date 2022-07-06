@@ -7,7 +7,7 @@
             </div>
 
             <ul class="menu">
->
+
                 <li v-for="link, index in menuLinks" :key="index" 
                     :class="{ 'current': link.current }">
 
@@ -85,8 +85,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
     header{
-        height: 80px;
-
 
         .container{
         background-color: white;
@@ -96,20 +94,25 @@ export default {
         display: flex;
         justify-content: space-between;
         align-content: center;
-        padding: 15px 0;
+        // padding: 15px 0;
         }
 
         .logo img{
             width: 55px;
+            padding: 15px 0;
         }
 
         .menu {
+            width: 60%;
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
 
             li{
-            padding: 0 10px;
+            // padding: 0 10px;
+            height: 100%;
+            display: flex;
+            align-items: center;
 
                 a{
                 font-size: 10px;
@@ -117,7 +120,8 @@ export default {
                 }
 
                 &.current{
-                    border-bottom: 1px solid #0084f9;
+                    box-shadow: 0 -5px #0084f9 inset;
+                    color: #0084f9;
                 }
 
             }

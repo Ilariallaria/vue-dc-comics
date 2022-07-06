@@ -1,7 +1,11 @@
 <template>
   <div id="app">
 
-    <PageHeader/>
+    <header>
+
+      <PageHeader/>
+
+    </header>
 
     <main>
 
@@ -10,6 +14,12 @@
 
     </main>
 
+    <footer>
+      
+      <FooterTop/>
+
+    </footer>
+
   </div>
 </template>
 
@@ -17,6 +27,7 @@
 import PageHeader from "./components/PageHeader.vue"
 import PageContent from "./components/PageContent.vue"
 import MyProduct from "./components/MyProduct.vue"
+import FooterTop from "./components/FooterTop.vue"
 
 
 export default {
@@ -25,6 +36,7 @@ export default {
     PageHeader,
     PageContent,
     MyProduct,
+    FooterTop,
   },
 };
 </script>
