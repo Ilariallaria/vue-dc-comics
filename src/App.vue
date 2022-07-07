@@ -9,6 +9,7 @@
 
     <main>
 
+      <MyBanner/>
       <PageContent/>
       <MyProduct/>
 
@@ -26,6 +27,7 @@
 
 <script>
 import PageHeader from "./components/PageHeader.vue"
+import MyBanner from "./components/MyBanner.vue"
 import PageContent from "./components/PageContent.vue"
 import MyProduct from "./components/MyProduct.vue"
 import FooterTop from "./components/FooterTop.vue"
@@ -36,6 +38,7 @@ export default {
   name: 'App',
   components: {
     PageHeader,
+    MyBanner,
     PageContent,
     MyProduct,
     FooterTop,
